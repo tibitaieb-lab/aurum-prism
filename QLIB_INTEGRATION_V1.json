@@ -1,0 +1,46 @@
+{
+  "covariance_estimators": [
+    "EMPIRICAL",
+    "SHRINK_LW",
+    "SHRINK_FIXED"
+  ],
+  "enhanced_indexing": {
+    "reason": "Factor exposures and benchmark absent; no invented factors",
+    "status": "NOT_INTEGRATED"
+  },
+  "excluded_estimators": {
+    "SHRINK_OAS": {
+      "reason": "Installed Qlib 0.9.7 formula differs from its documented OAS formula and independent reference. No dependency patch or replacement estimator.",
+      "status": "DISABLED_REFERENCE_DISCREPANCY"
+    }
+  },
+  "mathematical_conventions": {
+    "bounds": "Absolute full-NAV weights; cash fixed; long only; no automatic subset/cardinality optimizer",
+    "covariance": "ddof1 sample scale; Qlib shrinkage ddof0 scaled by T/(T-1); const_var target; no NaN handling/fill needed or allowed",
+    "mvo": "min -w*past_arithmetic_mean + risk_aversion*w*sample_cov*w; cash return zero",
+    "risk_analysis": "Explicit periods_per_year and note; Qlib sum mode; linear annualization and zero-reference information ratio, not CAGR or Sharpe",
+    "risk_parity": "Equal component variance contributions; verify achieved equality; reject incompatible constraints",
+    "risk_parity_positive_domain": "Normalized weights >=1e-12. Warm start must have positive marginal variances; inverse volatility when admissible, otherwise Phase-I linear feasibility with existing SciPy. Qlib RP objective and final equal-contribution check unchanged."
+  },
+  "methods": [
+    "MINIMUM_VARIANCE",
+    "MEAN_VARIANCE",
+    "RISK_PARITY"
+  ],
+  "numerical_policy": "Pinned Qlib objectives; minimal subclass adds bounds and fail-closed SciPy SLSQP status/KKT/RC checks. No fallback allocations. Analytic equality/GMV/MVO derivatives; existing 1e-12 PRISM accounting tolerance preserved. Runtime verification of pinned Qlib source hashes is repeated on every adapter verification; only optimizer class construction is cached.",
+  "performance_attribution": {
+    "reason": "Missing underlying instrument positions/amounts, benchmark weights/returns and sector classification",
+    "status": "NON_INTEGRABLE_CURRENT_CONTRACT"
+  },
+  "qlib_version": "0.9.7",
+  "scope": "ISOLATED_SYNTHETIC_VALIDATION_ONLY",
+  "source_sha256": {
+    "contrib/evaluate.py": "481cc823d65adb3c8729933c797e42199faeb699e0bc0dc8f1d8a112717774a2",
+    "contrib/evaluate_portfolio.py": "41e0fadcd33a2fa15ee85b91820ba6c04ed904ea52d53a946e42319ba0f4af09",
+    "contrib/strategy/optimizer/enhanced_indexing.py": "7bb65d6d1f89b5fed73fa3d03be6ec417e10d294d2559fed2f669693dd833e68",
+    "contrib/strategy/optimizer/optimizer.py": "c72de1a693584c1cb8968d8fcd34585f909a53588f9fdb3edb74ecd9e15ecb93",
+    "model/riskmodel/base.py": "dc09f77d4d38492e858d63d03765d05e18884d8e3d250b79c4a423693167e9ba",
+    "model/riskmodel/shrink.py": "95f66deb7cf75ce60b08e7a54116bf9f344cd0dccbb28eddfbf7eee007cafb11"
+  },
+  "version": "PRISM_QLIB_INTEGRATION_V1"
+}

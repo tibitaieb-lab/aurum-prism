@@ -1,0 +1,32 @@
+PRISM — Licence d’utilisation personnelle, privée et non commerciale
+
+Copyright (c) 2026 le titulaire des droits d’AURUM.
+Tous droits réservés, sous réserve des autorisations ci-dessous.
+
+1. Usage autorisé
+Le titulaire des droits autorise gratuitement toute personne physique à
+télécharger, installer, exécuter et copier le logiciel pour ses besoins
+strictement personnels, privés et non commerciaux. Cette autorisation est
+non exclusive et non transférable. Les mentions de droits doivent être
+conservées dans toute copie.
+
+2. Exploitation commerciale
+Toute exploitation commerciale, directe ou indirecte, nécessite un accord
+écrit préalable du titulaire des droits. Cela couvre notamment la revente,
+la fourniture d’un service payant fondé sur PRISM, son intégration dans une
+offre commerciale et son utilisation dans une activité professionnelle à
+but lucratif, même en interne. La rémunération éventuelle, y compris une
+redevance ou une part des recettes, est fixée par cet accord distinct.
+Les demandes peuvent être adressées au titulaire des droits via le compte
+GitHub tibitaieb-lab, indiqué sur le dépôt officiel.
+
+3. Autres droits
+Les droits non expressément accordés sont réservés. La diffusion à des
+tiers et la mise à disposition publique hors des fonctionnalités
+autorisées par GitHub nécessitent un accord écrit préalable. Les droits
+accordés par les conditions de GitHub pour consulter un dépôt public et
+en créer un fork sur GitHub s’appliquent. Les droits garantis par les
+dispositions impératives de la loi demeurent applicables.
+
+4. Composants tiers
+Les composants tiers restent soumis à leurs licences respectives.

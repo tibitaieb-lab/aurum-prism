@@ -1,2 +1,8 @@
-# Auto detect text files and perform LF normalization
+# Default Git text handling, with byte preservation for the calculation path.
 * text=auto
+/aurum_qlib_lab/** -text
+/QLIB_INTEGRATION_V1.json -text
+/examples/** -text
+/public_prism/** -text
+/tests/** -text
+/tools/** -text
